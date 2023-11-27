@@ -1,0 +1,232 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.body-instrucciones{
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    overflow-y: scroll!important;
+    //overflow-x: hidden!important;
+}
+
+.section-title{
+    border-top: 1px solid #7A7A7A1F!important;
+    //border-bottom: 1px solid #7A7A7A1F!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.eslogan{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    // max-width: 40%;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.interior-normal{
+    max-width: 40%;
+}
+
+.interior-mobile{
+    width: 100%;
+}
+
+.line-color{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 5%;
+}
+
+.vertical-line{
+    width: 5px; /* Line width */
+    background-color: #CD0000; /* Line color */
+    height: 40px!important; /* Override in-line if you want specific height. */
+    float: left;
+}
+
+.title-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    //Fuente
+    text-align: left;
+    font-family: Avenir-Bold;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.section-objetivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 248px;
+    left: 16px;
+    width: 100%;
+    padding-bottom: 3rem;
+
+    .text1{
+        /* Layout Properties */
+        width: 328px;
+        height: 16px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: left;
+        font-family: Avenir-Bold;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
+    .text-objetivo{
+        /* Layout Properties */
+        width: 328px;
+        height: 112px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: left;
+        font-family: Avenir;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        text-align: justify;
+        padding-top: 1.5rem;
+    }
+}
+
+.section-puntuacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 248px;
+    left: 16px;
+    width: 100%;
+    padding-bottom: 2rem;
+
+
+    .text2{
+        /* Layout Properties */
+        width: 328px;
+        height: 16px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: left;
+        font-family: Avenir-Bold;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        padding-bottom: 2.5rem;
+    }
+
+    .table-responsive{
+        width: 345px;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .head-table{
+        top: 459px;
+        left: 16px;
+        width: 64px;
+        height: 16px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: left;
+        font-family: Avenir;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .tr-table{
+        width: 328px;
+        height: 40px;
+        /* UI Properties */
+        font-family: Avenir Next LT Pro;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+.section-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 248px;
+    left: 16px;
+    width: 100%;
+    padding-bottom: 9rem;
+
+    .text3{
+        /* Layout Properties */
+        width: 328px;
+        height: 16px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: left;
+        font-family: Avenir-Bold;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
+    .text-information{
+        /* Layout Properties */
+        width: 328px;
+        height: 112px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: left;
+        font-family: Avenir;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        text-align: justify;
+        padding-top: 1.5rem;
+    }
+}
+
+//Button
+.mat-flat-button{
+    background: #CD0000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 188px;
+    height: 40px;
+    border-radius: 0;
+    //Fuente
+    .text-btn{
+        text-align: center;
+        font-family: Avenir;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}

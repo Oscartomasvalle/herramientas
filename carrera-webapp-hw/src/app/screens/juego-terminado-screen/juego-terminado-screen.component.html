@@ -1,0 +1,44 @@
+<section class="juego-terminado">
+    <div class="wrapper">
+        <mat-drawer-container>
+        <mat-drawer #drawer mode='over' position="start">
+            <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+        </mat-drawer>
+        <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+        <div class="body-juegoterminado">
+            <div class="links">
+                <div class="line-color">
+                    <div class="vertical-line" style="height: 111px;"></div>
+                </div>
+                <div class="title-link">
+                    <span>¡EXCELENTE CARRERA!</span>
+                </div>
+            </div>
+            <div class="line-center">
+                <div class="rectangle" style="height: 160px;"></div>
+            </div>
+            <div class="section-bases">
+                <div class="num-bases">
+                    <span class="txt-normal-1">Obtuviste</span>
+                    <span class="txt-normal-2">1400</span>
+                    <span class="txt-normal-3">puntos</span>
+                </div>
+            </div>
+            <div class="description">
+                <div class="text-description">
+                    <p class="descrip1">Gracias por participar, acumula mas puntos y<br></p>
+                    <p class="descrip2">gana una increible <b>Ducati Scrambler</b></p>
+                </div>
+            </div>
+            <div class="d-flex flex-direction-row justify-content-center w-100 mt-4 mb-4">
+                <button mat-flat-button color="warn" class="btn-login" (click)="login()">
+                    <span class="text-btn">IR AL INICIO</span>
+                </button>
+            </div>
+            <div class="footer">
+                <app-footer-app></app-footer-app>
+            </div>
+        </div>
+        </mat-drawer-container>
+    </div>
+</section>

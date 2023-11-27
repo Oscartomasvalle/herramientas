@@ -1,0 +1,228 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.body-juegoterminado{
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    overflow-y: scroll!important;
+    border-top: 1px solid #7A7A7A1F!important;
+    border-bottom: 1px solid #7A7A7A1F!important;
+    display: flex;
+    flex-direction: column;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.line-color{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 5%;
+    padding-top: 2rem;
+}
+
+.vertical-line{
+    top: 120px;
+    left: 16px;
+    width: 4px;
+    height: 40px;
+    background-color: #CD0000; /* Line color */
+    height: 40px!important; /* Override in-line if you want specific height. */
+    float: left;
+}
+
+.title-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 20px;
+    width: 90%;
+    //Fuente
+    text-align: left;
+    font-family: Avenir-Bold;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding-top: 2rem;
+}
+
+.line-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.rectangle{
+    top: 184px;
+    left: 135px;
+    width: 90px;
+    background-color: #CD0000; /* Line color */
+    opacity: 1;
+}
+
+.section-bases {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    gap: 2.5rem;
+}
+
+.num-bases {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    .txt-normal-1 {
+        /* Layout Properties */
+        top: 384px;
+        left: 135px;
+        width: 90px;
+        height: 16px;
+        /* UI Properties */
+        text-align: center;
+        font-family: Avenir-Bold;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #CD0000;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+    
+    .txt-normal-2 {
+        padding-top: 37px;
+        left: 87px;
+        width: 186px;
+        height: 72px;
+        /* UI Properties */
+        text-align: center;
+        font-family: Avenir-Bold;
+        font-size: 72px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .txt-normal-3 {
+        /* Layout Properties */
+        padding-top: 30px;
+        left: 135px;
+        width: 76px;
+        height: 24px;
+        /* UI Properties */
+        text-align: center;
+        font-family: Avenir;
+        font-size: 26px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+}
+
+.description{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 1rem;
+    /* UI Properties */
+    color: var(--texto);
+    text-align: center;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.text-description{
+    /* Layout Properties */
+    flex-direction: column;
+    top: 584px;
+    left: 16px;
+    width: 328px;
+    height: 40px;
+    /* UI Properties */
+    color: var(--texto);
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .descript1{
+        /* Layout Properties */
+        top: 0px;
+        left: 0.615997314453125px;
+        width: 327px;
+        height: 16px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: center;
+        font-family: Avenir Next LT Pro;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
+    .descript2{
+        /* Layout Properties */
+        top: 24px;
+        left: 165px;
+        width: 136px;
+        height: 16px;
+        /* UI Properties */
+        color: var(--texto);
+        text-align: center;
+        font: normal normal bold 16px/24px Avenir Next LT Pro;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+}
+
+//Button
+.mat-flat-button{
+    background: #CD0000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 188px;
+    height: 40px;
+    border-radius: 0;;
+    //Fuente
+    .text-btn{
+        text-align: center;
+        font-family: Avenir;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+
+.mat-flat-button.mat-primary.mat-button-disabled, .mat-flat-button.mat-accent.mat-button-disabled, .mat-flat-button.mat-warn.mat-button-disabled, .mat-flat-button.mat-button-disabled.mat-button-disabled, .mat-raised-button.mat-primary.mat-button-disabled, .mat-raised-button.mat-accent.mat-button-disabled, .mat-raised-button.mat-warn.mat-button-disabled, .mat-raised-button.mat-button-disabled.mat-button-disabled, .mat-fab.mat-primary.mat-button-disabled, .mat-fab.mat-accent.mat-button-disabled, .mat-fab.mat-warn.mat-button-disabled, .mat-fab.mat-button-disabled.mat-button-disabled, .mat-mini-fab.mat-primary.mat-button-disabled, .mat-mini-fab.mat-accent.mat-button-disabled, .mat-mini-fab.mat-warn.mat-button-disabled, .mat-mini-fab.mat-button-disabled.mat-button-disabled {
+    background: #CD0000 0% 0% no-repeat padding-box;
+}

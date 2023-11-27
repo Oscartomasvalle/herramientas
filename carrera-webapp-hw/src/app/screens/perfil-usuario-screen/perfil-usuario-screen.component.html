@@ -1,0 +1,40 @@
+<section class="usuario-screen">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <!-- Sección del body donde se muestra todo el contenido -->
+            <div class="body-usuario">
+                <div class="section-information">
+                    <span class="txt-tittle">Foto del equipo</span>
+                    <div class="image">
+                        <img src = "assets/images/team.jpg" class="img">
+                    </div>
+                </div>
+                <div class="section-information">
+                    <span class="txt-tittle">Nombre del alumno:</span>
+                    <span class="txt-tittle-red">Oscar Uziel Tomas Vallejo</span>
+                </div>
+                <div class="section-information">
+                    <span class="txt-tittle">Nombre de la materia:</span>
+                    <span class="txt-tittle-red">Herramientas web</span>
+                </div>
+                <div class="section-information">
+                    <span class="txt-tittle">Nombre del profesor:</span>
+                    <span class="txt-tittle-red">Luis Yael Méndez Sanchéz</span>
+                    <div class="image">
+                        <img src = "assets/images/profeYael.jpg" class="avatar">
+                    </div>
+                </div>
+                <div class="section-information">
+                    <span class="txt-tittle">Otoño 2023</span>
+                </div>
+            </div>
+        </mat-drawer-container>
+        <div class="footer">
+            <app-footer-app></app-footer-app>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<ng-container *ngIf="isMobile(); else isDesktop">
+    <div class="wrapper-mobile">
+        <!-- <img src="/assets/images/imagen-juego.png" class="image-mobile"> -->
+        <img src="/assets/images/game-image.jpg" (click)="goJuegoTerminado()" class="image-desktop">
+    </div>
+</ng-container>
+<ng-template #isDesktop>
+    <div class="wrapper-desktop">
+        <img src="/assets/images/game-image.jpg" (click)="goJuegoTerminado()" class="image-desktop">
+    </div> 
+</ng-template>

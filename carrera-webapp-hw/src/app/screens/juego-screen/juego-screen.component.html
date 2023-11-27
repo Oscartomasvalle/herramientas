@@ -1,0 +1,66 @@
+<section class="juego">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <!-- Sección del body donde se muestra todo el contenido -->
+            <div class="body-juego">
+                <div class="section-title">
+                    <div class="eslogan {{isMobile()}}">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>NUEVO LOOK</span>
+                        </div>
+                    </div>                  
+                </div>
+
+                <div class="section-content">
+                    <div class="text-look">
+                        <span>¿Quieres tener una idea de cómo verías si usarás unos increíbles Carrera Ducati?</span>
+                    </div>
+                    <div class="section-image">
+                        <div class="num-bases">
+                            <img src="/assets/images/lentes-ducati-1.png" class="image">
+                            <span class="txt-normal">CARDUC 001/S</span>
+                        </div> 
+
+                        <div class="num-bases">
+                            <img src="/assets/images/lentes-ducati-2.png" class="image">
+                            <span class="txt-normal">CARDUC 002/S</span>
+                        </div> 
+
+                        <div class="num-bases">
+                            <img src="/assets/images/lentes-ducati-3.png" class="image">
+                            <span class="txt-normal">CARDUC 003/S</span>
+                        </div> 
+                    </div> 
+                </div> 
+
+                <div class="section-button">
+                    <div class="text-left">
+                        <div class="d-flex flex-direction-row justify-content-center w-100 mt-4 mb-4">
+                            <button mat-button color="warn" (click)="goGame()">
+                                <span class="text-btn1">OMITIR</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="d-flex flex-direction-row justify-content-center w-100 mt-4 mb-4">
+                            <button mat-flat-button color="warn" class="btn-login" (click)="goGame()">
+                                <span class="text-btn">USAR LENTES</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+            </div>
+        </mat-drawer-container>
+    </div>
+</section>
